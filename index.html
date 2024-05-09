@@ -10,24 +10,30 @@
   <h1>Welcome to MineLaunch</h1>
   <h2>The simplified Minecraft Launcher</h2>
 
-  <script src="three.r134.min.js"></script>
-  <script src="vanta.clouds.min.js"></script>
-  <script>
-  VANTA.CLOUDS({
-    el: "#your-element-selector",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    skyColor: 0x1399cf,
-    cloudColor: 0x90abd4,
-    cloudShadowColor: 0x17232f,
-    sunColor: 0xe8a757,
-    sunGlareColor: 0xd94b1c,
-    sunlightColor: 0xe38b34,
-    speed: 1.50
-  })
-  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+    <script>
+    var setVanta = ()=>{
+    if (window.VANTA) window.VANTA.CLOUDS({
+      el: ".s-page-1 .s-section-1 .s-section",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      skyColor: 0x1399cf,
+      cloudColor: 0x90abd4,
+      cloudShadowColor: 0x17232f,
+      sunColor: 0xe8a757,
+      sunGlareColor: 0xd94b1c,
+      sunlightColor: 0xe38b34,
+      speed: 1.50
+    })
+    }
+    _strk.push(function() {
+      setVanta()
+      window.edit_page.Event.subscribe( "Page.beforeNewOneFadeIn", setVanta )
+    })
+</script>
 </body>
 </html>
