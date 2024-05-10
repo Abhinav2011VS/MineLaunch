@@ -64,3 +64,27 @@ button:hover {
     right: 10px;
     cursor: pointer;
 }
+
+/* Styles for the pop-up */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255, 0.60);
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    z-index: 9999;
+}
+
+.popup-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup-message {
+    font-size: 18px;
+}
