@@ -103,10 +103,11 @@ button:hover {
       text-decoration: none;
       color: black;
       font-weight: bold;
+      font-size: 18px;
 }
 
 .navbar img {
-      width: 20px; /* Adjust the size as needed */
-      height: 20px;
+      width: 40px; /* Adjust the size as needed */
+      height: 40px;
       margin-right: 5px;
 }
