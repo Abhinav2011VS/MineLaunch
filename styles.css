@@ -91,25 +91,19 @@ button:hover {
 
 .navbar {
       display: flex;
-      justify-content: flex-start;
       align-items: center;
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      background-color: rgba(0, 0, 0, 0.5); /* Translucent black */
-      backdrop-filter: blur(10px); /* Blurred effect */
       padding: 10px;
-      border-radius: 10px;
 }
 
 .navbar a {
       margin-left: 20px;
       text-decoration: none;
-      color: white;
+      color: black;
       font-weight: bold;
-      transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-.navbar a:hover {
-      background-color: rgba(255, 255, 255, 0.1); /* Lighter background on hover */
+.navbar img {
+      width: 20px; /* Adjust the size as needed */
+      height: 20px;
+      margin-right: 5px;
 }
