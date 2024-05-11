@@ -106,6 +106,10 @@ button:hover {
       font-size: 18px;
 }
 
+.navbar a:hover {
+      color: grey;
+}
+
 .navbar img {
       width: 40px; /* Adjust the size as needed */
       height: 40px;
