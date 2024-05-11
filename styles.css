@@ -107,4 +107,9 @@ button:hover {
       text-decoration: none;
       color: white;
       font-weight: bold;
+      transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.1); /* Lighter background on hover */
 }
