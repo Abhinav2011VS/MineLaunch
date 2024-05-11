@@ -115,13 +115,3 @@ button:hover {
       height: 40px;
       margin-right: 5px;
 }
-
-section {
-      display: none;
-      margin-top: 50px; /* Adjust as needed */
-}
-
-section.active {
-      display: block;
-}
-
