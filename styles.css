@@ -91,11 +91,15 @@ button:hover {
 
 .navbar {
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
       align-items: center;
       position: absolute;
       top: 20px;
-      right: 20px;
+      left: 20px;
+      background-color: rgba(0, 0, 0, 0.5); /* Translucent black */
+      backdrop-filter: blur(10px); /* Blurred effect */
+      padding: 10px;
+      border-radius: 10px;
 }
 
 .navbar a {
