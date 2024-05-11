@@ -14,13 +14,11 @@
 <body>
   <div id="demo" class="wrapp">
     <nav class="navbar">
-      <a href="#home">
-        <img src="favicon.svg" alt="Home" /> Home
-      </a>
+      <a href="/">Home</a>
       <a href="#about">About</a>
     </nav>
 
-    <section id="home">
+    <section id="home" class="active">
       <h1>MineLaunch Official</h1>
       <h2>The simplified Minecraft Launcher</h2>
     </section>
@@ -35,6 +33,23 @@
         <div id="popup-message" class="popup-message"></div>
     </div>
     <script src="/script.js"></script>
+    <script>
+      // JavaScript to handle showing/hiding sections based on the URL hash
+      window.addEventListener('hashchange', function() {
+        var hash = window.location.hash.substr(1);
+        var sections = document.querySelectorAll('section');
+        sections.forEach(function(section) {
+          if (section.id === hash) {
+            section.classList.add('active');
+          } else {
+            section.classList.remove('active');
+          }
+        });
+      });
+
+      // Trigger hashchange event on page load to show initial section
+      window.dispatchEvent(new Event('hashchange'));
+    </script>
   </div>
   <script src="https://assets.website-files.com/5d971c4989c88c0b4cca55cd/js/webflow.1bc56dc86.js" type="text/javascript"></script>
   <script src="https://assets.website-files.com/5d932bf11608325eac058a21/5d932d68160832c7c0059c91_three.r92.min.txt"></script>
