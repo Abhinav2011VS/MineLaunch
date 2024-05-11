@@ -115,3 +115,8 @@ button:hover {
       height: 40px;
       margin-right: 5px;
 }
+
+section {
+      margin-top: 50px; /* Adjust as needed */
+}
+
